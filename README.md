@@ -1,5 +1,6 @@
 # This TF Repo for Vault Terraform integration
 
+# Post provisioning resources through Terraform , we need to follow below process to enable Vault Server and add role.
 
 ## Start Vault.
 

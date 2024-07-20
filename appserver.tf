@@ -24,7 +24,7 @@ resource "aws_instance" "app" {
 
   tags = {
     Name = "APPServer"
-    Admin = data.vault_kv_secret_v2.admin.admin
+    Admin = data.vault_kv_secret_v2.admin.data[admin]
   }
 
 }

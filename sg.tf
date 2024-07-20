@@ -6,7 +6,7 @@ resource "aws_security_group" "ssh" {
     name = "SSH"
     vpc_id = data.aws_vpc.default.id
 
-    ingress = {
+    ingress {
         from_port = 22
         to_port = 22
         protocol = "tcp"
@@ -14,7 +14,7 @@ resource "aws_security_group" "ssh" {
         ipv6_cidr_blocks = ["::/0"]
     }
 
-    egress = {
+    egress {
         from_port = 0
         to_port = 0
         protocol = "-1"

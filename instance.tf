@@ -7,6 +7,7 @@ resource "aws_instance" "vault" {
   ami = "ami-04a81a99f5ec58529"
   instance_type = "t3.micro"
   key_name = "vaultkey"
+  security_groups = ["aws_security_group.ssh.id"]
 
   connection {
     type = "ssh"

@@ -1,6 +1,11 @@
+data "aws_vpc" "default" {
+    default = true
+}
+
 resource "aws_security_group" "ssh" {
     name = "SSH"
-    vpc_id = aws_vpc.main.id
+    vpc_id = data.aws_vpc.default.id
+
     ingress = {
         from_port = 22
         to_port = 22

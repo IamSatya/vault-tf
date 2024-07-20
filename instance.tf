@@ -4,7 +4,7 @@ resource "aws_key_pair" "vaultkey" {
 }
 
 resource "aws_instance" "vault" {
-  ami = "ami-ininnvnv"
+  ami = "ami-04a81a99f5ec58529"
   instance_type = "t3.micro"
   key_name = aws_key_pair.vaultkey
 

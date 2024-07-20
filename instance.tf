@@ -25,4 +25,5 @@ resource "aws_instance" "vault" {
         "sudo apt install vault -y"
      ]
     }
+    depends_on = [ aws_key_pair.vaultkey ]
 }

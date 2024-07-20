@@ -16,7 +16,7 @@ data "vault_kv_secret_v2" "admin" {
     name = "admincreds"
 }
 
-resource "aws_instance" "vault" {
+resource "aws_instance" "app" {
   ami = "ami-04a81a99f5ec58529"
   instance_type = "t3.micro"
   key_name = "vaultkey"

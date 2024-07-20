@@ -5,8 +5,8 @@ provider "vault" {
     path = "auth/approle/login"
 
     parameters = {
-        role_id = "caf0e394-2173-eaae-a8e2-11d1097ff07b"
-        secret_id = "7f08304d-9cf7-308d-83a3-af99f70df948"
+        role_id = "env://vault_role_id"
+        secret_id = "env://vault_secret_id"
     }
   }
 }

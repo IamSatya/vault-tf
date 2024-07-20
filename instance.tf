@@ -11,7 +11,7 @@ resource "aws_instance" "vault" {
   connection {
     type = "ssh"
     user = "ubuntu"
-    private_key = file("/root/.ssh/awskey.pub")
+    private_key = file("/root/.ssh/awskey")
     host = self.public_ip
   }
 

@@ -1,9 +1,9 @@
 # TF Repo for Vault Terraform integration
 
 ##Clone the repo and apply the terraform for provisioning the resources.
-git pull https://github.com/IamSatya/vault-tf.git
-cd vault-tf
-terraform apply --auto-approve
+- git pull https://github.com/IamSatya/vault-tf.git
+- cd vault-tf
+- terraform apply --auto-approve
 
 ## Post provisioning resources through Terraform , we need to follow below process to enable Vault Server and add role.
 

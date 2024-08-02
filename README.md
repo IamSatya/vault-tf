@@ -1,6 +1,6 @@
 # TF Repo for Vault Terraform integration
 
-##Clone the repo and apply the terraform for provisioning the resources.
+## Clone the repo and apply the terraform for provisioning the resources.
 - git pull https://github.com/IamSatya/vault-tf.git
 - cd vault-tf
 - terraform apply --auto-approve

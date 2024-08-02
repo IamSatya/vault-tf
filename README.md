@@ -1,8 +1,8 @@
 # TF Repo for Vault Terraform integration
 
-# Post provisioning resources through Terraform , we need to follow below process to enable Vault Server and add role.
+## Post provisioning resources through Terraform , we need to follow below process to enable Vault Server and add role.
 
-## Start Vault.
+### Start Vault.
 
 To start Vault, you can use the following command:
 
@@ -10,7 +10,7 @@ To start Vault, you can use the following command:
 vault server -dev -dev-listen-address="0.0.0.0:8200"
 ```
 
-## Configure Terraform to read the secret from Vault.
+### Configure Terraform to read the secret from Vault.
 
 Detailed steps to enable and configure AppRole authentication in HashiCorp Vault:
 
